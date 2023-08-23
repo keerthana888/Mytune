@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myTunes</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+            /* background-color: palevioletred; */
+            
+        }
+        html, body{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 300;
+            line-height: 1.4;
+            scroll-behavior: smooth;
+            
+            
+        }
+        ul{
+          list-style: none;  
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .container{
+            width: 1200px;
+            margin: 0;
+        }
+        header{
+            background-color: palevioletred;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            padding: 20px 0;
+        }
+        .logo{
+            font-size: 32px;
+            font-weight: 600;
+        }
+        button{
+            padding: 10px 15px;
+            border: none;
+            transition: 0.2s ease-in-out;
+        }
+        button:hover{
+            opacity: 0.8;
+            transition: 0.2s ease-in-out;
+        }
+        nav ul{
+            display: flex;
+            gap: 20px;
+
+        }
+        nav ul li{
+            border-bottom: 2px solid transparent;
+            transition: 0.2s ease-in;
+        }
+        nav ul li:hover{
+            border-bottom: 2px solid white;
+            transition: 0.2s ease-in;
+        }
+        .hero-section{
+          background-image: url(ppl.jpg);
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+           height: 100vh;
+           display: grid;
+           color: white;
+           place-items: center;
+           text-align: center;
+           text-align: center;
+        }
+         .hero-section{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+         }   
+        .hero-section h1{
+            font-size: 96px;
+            
+        }
+        .hero-section h4{
+            font-size: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-section h3{
+            font-size: 32px;
+            /* align-items: center; */
+        }  
+        .music-section{
+            padding-top:50px;
+            background-color: palevioletred;
+            
+        }
+
+         .music-section .container{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            
+        
+         }  
+         .ipad-iphone-img{
+            margin-top: -400px;
+            position: relative;
+            top:400px;
+            margin-left: 100px;
+         } 
+         .primary-btn{
+            background-color: red;
+            color: white;
+         }
+         .secondary-btn{
+            background-color: red;
+            color: white;
+         }
+         .about-music{
+            padding-top: 500px;
+            display: grid;
+            place-items: center;
+            gap: 50px;
+            text-align: center;
+            margin-bottom: 50px;
+         }
+         .video-section{
+            background-image: url(mg.jpg);
+            /* background-size: cover; */
+            height: 800px;
+            display: grid;
+            place-items: center;
+            color: white;
+            text-align: center;
+        
+         }
+         .video-section .container{
+            display: flex;
+            flex-direction:column ;
+            gap: 30px;
+            margin-top: -200px;
+            
+         }
+    
+        
+         .hero-section,.video-section{
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            justify-content: center;
+         }
+         .gift-section{
+            /* background-color: palevioletred; */
+            display: flex;
+            justify-content: center;
+            margin: 100px 0;
+            gap:50px;
+         }
+         .gift-content{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+         }
+         .footer-upper{
+            background-color: palevioletred;
+            padding:20px;
+         }
+         .footer-upper .container{
+            display: flex;
+            color: white;
+            justify-content: space-between;
+         }
+         .footer-upper h4{
+            padding-bottom: 10px;
+            border-bottom: 2px solid white;
+            margin-bottom: 10px;
+         }
+         .footer-lower p{
+            background-color: palevioletred;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            color: white;
+         }
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+        <div class="logo">myTunes </div>
+        <ul>
+            <a href="#hero">
+            <li>overview</li>
+            </a>
+            <a href="#music">
+            <li>music</li>
+            </a>
+            <a href="#video">
+            <li>video</li>
+            </a>
+            <a href="#gift">
+            <li>gift</li>
+            </a>
+
+        </ul>
+    </nav>
+  
+  <main>
+    <section class="hero-section" id="hero">
+        <div class="container"><h1>my Tunes</h1><h3>your music,movies, and TV shows take center stage.</h3>
+            <p>mytunes is the best way to organise and enjoy the music,movies,and TV shows you already have-and shop for the ones you want.Enjoy all the entertainment myTunes has to offer on your Mac and PC</p>
+        </div>
+    </section>
+    <section class="music-section" id="music">
+        <div class="container">
+            <h2>music</h2>
+            <h4 align="center">stream over 45million songs,ad-free.Or download albums and tracks to listen to offline.All the music in your personal myTunes library-no matter where it came from-lives rifgt alongside the orange music catalog.Start your free three-month trail with no commitment and cancel anytime</h4>
+            <button class="primary-btn">
+                start your Trail Now
+            </button>
+            <p><h3>orange music is available in myTunes,and for ios and Android devices.</h4></p>
+            <div class="ipad-iphone-img">
+                <img src="ipad.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="section about-music container">
+        <h3>The movie and TV collection you always wished for granted</h3>
+        <h4 align="center">with over 10,00000 movies and TV shows to choose from,there's always something great to watch on myTunes and if you watch on Orange TV 4k,you will be able to enjoy a tremendous slection
+        of your favourite conatent in 4k HDR.So get ready to enjoy episodes of ypur favourite TV shows or hit movies you have been waiting to see-anymore,anywhere.Just tap to paly,or even download if you are going somewher you won't have Wi-fi.
+        </h4>
+        <button class="secondary-btn">Read more</button>
+        <div class="hero-section">
+            <img src="mot.png" alt="" height="600px" width="800px">
+        </div>
+    </section>
+    <section class="video-section" id="video">
+    <div class="container">
+        <h3>A world of entertainment.Available wherever you are.</h3>
+        <p >myTunes is a program that originally allowed Windows users to download music from an iTunes music share over a network, circumventing restrictions in iTunes that only allow streaming music. The software was widely popular on college campuses across the U.S. in the early 2000s. It was developed by Bill Zeller at Trinity College.
+          myTunes became defunct in 2006. As ZDNetUK News.com reported on 9 March 2004, "the popular software has all but vanished from the Net, and its programmer's sites have gone dark. But this time, it's not the doing of an angry record industry or a conflict-averse Apple. Trinity College sophomore Bill Zeller, who wrote the program in less than two weeks of off-time coding last year, says he simply lost the source code in a catastrophic computer crash." Zeller said: "I was about to release the second version, when I lost everything. I may put it back online, but there won't be any updates. I don't want to rewrite it." Subsequently, an entirely rewritten version, myTunes Redux, was released, which again operated successfully until once more disabled in iTunes version 7.</p>
+    </div>
+    </section>
+    <div class="container">
+        <section class="gift-section " id="gift">
+            <div class="gift-card">
+                <img src="gg.png" alt="" height="200px" width="400px">
+            </div>
+            <div class="gift-content">
+                <h3>Gift card</h3>
+                <p>Our Gift Cards are easy to purchase and use. Simply choose the amount you want to give, from 1000rs to 2499rs, and we'll email you the Gift Card with a unique code that can be redeemed on our website.
+                The recipient can use the Gift Card to purchase any of our services, including custom orchestral arrangements, professional mixing and mastering, music production, and sound design. They can use it to enhance their existing music or start a new project from scratch.
+                    
+                    </p>
+            <p>Alreay have an orange myTunes music Gift card?</p>
+            <hr>
+            <div>
+                <button class="secondary-btn">Redeem</button>
+            </div>
+            </div>
+        </section>
+    </div>
+  </main>
+  <footer>
+    <section>
+        <section class="footer-upper">
+            <div class="container">
+                <div class="footer-links">
+                    <h4>Shop & Learn</h4>
+                    <ul>
+                        <li>Music</li>
+                        <li>Movies</li>
+                        <li>Shows</li>
+                        <li>Apps</li>
+                        <li>Gift Cards</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>education & Business</h4>
+                    <ul>
+                        <li>Orange & Education</li>
+                        <li>shop for college</li>
+                        <li>orange and Business</li>
+                        <li>shop for Business</li>
+                        <li>Jobs</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Orange store</h4>
+                    <ul>
+                        <li>Find a store</li>
+                        <li>Today at Orange</li>
+                        <li>Financing</li>
+                        <li>Orange camp</li>
+                        <li>order status</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>About Orange</h4>
+                    <ul>
+                        <li>newsroom</li>
+                        <li>Orange Leadership</li>
+                        <li>Investors</li>
+                        <li>Events</li>
+                        <li>Contact orange</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="footer-lower">
+        <p>Copyright 2023 myTunes</p>
+    </section>
+  </footer>
+</header>
+</body>
+</html>
